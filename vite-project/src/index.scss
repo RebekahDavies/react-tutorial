@@ -1,0 +1,57 @@
+body {
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #27292c;
+  color: white;
+}
+
+h1 {
+  margin-top: 30px;
+}
+
+.header {
+  display: flex;
+  align-items: center; /** This aligns items to the center and will stop images from stretching to full height, making the width look squished */
+  justify-content: space-between;
+}
+
+.react-logo {
+  width: 55px;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+}
+
+.nav-list li {
+  font-size: 1.2rem;
+
+  a {
+    margin-left: 10px;
+  color: #f1f1f1;
+  text-decoration: none;
+  }
+
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  margin-top: 50px;
+}
+
+.react-facts {
+  height: fit-content;
+  width: 500px;
+  background-color: #61DAFB;
+  padding: 16px 24px;
+  box-shadow: #151616 0px 0px 10px;
+
+  .body {
+    margin-top: 24px;
+    font-size: 1.2rem;
+  }
+}

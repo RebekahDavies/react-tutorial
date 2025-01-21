@@ -1,24 +1,45 @@
-import {createRoot} from 'react-dom/client';
+import './index.scss'
 
-export function Header() {
+function Header() {
     return (
-        <section>
-            <img src='src/assets/react.svg' width='40px'></img>
-        </section>
+        <nav className='header'>
+            <img className='react-logo' src='src/assets/react.svg'></img>
+            <ul className="nav-list">
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     )
 }
 
-export function Main() {
+function Main() {
     return(
         <main>
-            <h1>Fun facts about React</h1>
-            <ul>
-                <li>Was first released in 2013</li>
-                <li>Was originally created by Jordan Walke</li>
-                <li>Has well over 100K stars on GitHub</li>
-                <li>Is maintained by Meta</li>
-                <li>Powers thousands of enterprise apps, inclusing mobile apps</li>
-            </ul>
+            <div className="react-facts">
+                <div className="header">
+                    <h1>Fun facts about React</h1>
+                </div>
+                <div className="body">
+                    <ul>
+                        <li>Was first released in 2013</li>
+                        <li>Was originally created by Jordan Walke</li>
+                        <li>Has well over 100K stars on GitHub</li>
+                        <li>Is maintained by Meta</li>
+                        <li>Powers thousands of enterprise apps, inclusing mobile apps</li>
+                </ul>
+                </div>
+                
+            </div>
         </main>
+    )
+}
+
+export function Page() {
+    return (
+        <>
+            <Header />
+            <Main />
+        </>
     )
 }
