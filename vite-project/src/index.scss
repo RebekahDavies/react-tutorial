@@ -1,22 +1,35 @@
 body {
-  padding: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #27292c;
-  color: white;
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
 }
 
-h1 {
-  margin-top: 30px;
+header {
+  height: 90px;
+  background-color: #21222A;
+  padding: 30px 25px;
 }
 
-.header {
+nav {
   display: flex;
   align-items: center; /** This aligns items to the center and will stop images from stretching to full height, making the width look squished */
   justify-content: space-between;
+  height:100%;
+
+  span {
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-left: 5px;
+    color: #61DAFB;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
 }
 
 .react-logo {
-  width: 55px;
+  width: 40px;
 }
 
 .nav-list {
@@ -27,31 +40,5 @@ h1 {
 
 .nav-list li {
   font-size: 1.2rem;
-
-  a {
-    margin-left: 10px;
-  color: #f1f1f1;
-  text-decoration: none;
-  }
-
-}
-
-main {
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  margin-top: 50px;
-}
-
-.react-facts {
-  height: fit-content;
-  width: 500px;
-  background-color: #61DAFB;
-  padding: 16px 24px;
-  box-shadow: #151616 0px 0px 10px;
-
-  .body {
-    margin-top: 24px;
-    font-size: 1.2rem;
-  }
+  margin-left: 10px
 }

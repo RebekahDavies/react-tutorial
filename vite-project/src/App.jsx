@@ -1,15 +1,9 @@
+import Nav from './components/Navigation'
 import './index.scss'
 
 function Header() {
     return (
-        <nav className='header'>
-            <img className='react-logo' src='src/assets/react.svg'></img>
-            <ul className="nav-list">
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <Nav />
     )
 }
 
